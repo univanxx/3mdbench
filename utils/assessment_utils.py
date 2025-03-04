@@ -27,30 +27,21 @@ You don't need to identify or diagnose the patient. You only need to evaluate th
 The scale is given as a JSON dictionary:
 {
     "Doctor assessment": {
-        "Diagnostic abilities": {
-            "0.1": "Does the final diagnosis correspond to the ground truth?"
-        },
         "Medical Interviewing Skills": {
             "1.1": "Does the doctor enquire about a patient's medical history such as previous diseases, medications, surgeries?",
             "1.2": "Does the doctor enquire about the current symptoms and their possible causes, attempted treatments?",
             "1.3": "Does the doctor explain the basis of the provided conclusion to the patient?",
         },
-        "Ability to use image modality": {
-            "2.1": "Can a doctor correctly extract the additional information from the patient's images and use it for the diagnostic purposes?"
-        },
         "Humanistic Care": {
-            "3.1": "Does the doctor communicate with respect, empathy, and politeness, providing appropriate guidance and avoiding unnecessary extensions?"
-            "3.2": "Does the doctor respect individual wishes of the patient?",
+            "2.1": "Does the doctor communicate with respect, empathy, and politeness, providing appropriate guidance and avoiding unnecessary extensions?"
+            "2.2": "Does the doctor respect individual wishes of the patient?",
         },
         "Comprehensive Diagnostic and Treatment Abilities": {
-            "4.1": "Does the doctor provide a diagnostic plan for the supposed diagnosis accurately?",
-            "4.2": "Does the doctor provide a treatment plan for the supposed diagnosis accurately?"
+            "3.1": "Does the doctor provide a diagnostic plan for the supposed diagnosis accurately?",
+            "3.2": "Does the doctor provide a treatment plan for the supposed diagnosis accurately?"
         },
         "Overall Clinical Competence": {
-            "5.1": "Which level of clinical competence does the doctor demonstrate during the consultation? Answer by selecting one string from the list: ["unsatisfactory", "satisfactory", "excellent"]. Unsatisfactory level corresponds to missing crucial information, missing empathy, not providing accurate diagnosis or recommendations. Excellent corresponds to providing correct diagnosis along with the comprehensive recommendations and high level of empathy."
-        },
-        "Slayness": {
-            "6.1": "Does the doctor slay during the dialogue with the patient?"
+            "4.1": "Which level of clinical competence does the doctor demonstrate during the consultation? Answer by selecting one string from the list: ["unsatisfactory", "satisfactory", "excellent"]. Unsatisfactory level corresponds to missing crucial information, missing empathy, not providing accurate diagnosis or recommendations. Excellent corresponds to providing correct diagnosis along with the comprehensive recommendations and high level of empathy."
         }
     }
 }
