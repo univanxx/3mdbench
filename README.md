@@ -21,3 +21,16 @@
 * Run ```run_assessment.sh``` to estimate generated dialogue which will be contained in the ```results/assessments``` folder;
 * Run ```run_diagnoses_obtaining.sh```to extract final diagnoses by Doctor Agent for each case;
 * Explore ```benchmarking/count_metrics.ipynb``` to analyze model's metrics.
+
+#### BibTeX reference
+```
+@misc{sviridov20253mdbenchmedicalmultimodalmultiagent,
+      title={3MDBench: Medical Multimodal Multi-agent Dialogue Benchmark}, 
+      author={Ivan Sviridov and Amina Miftakhova and Artemiy Tereshchenko and Galina Zubkova and Pavel Blinov and Andrey Savchenko},
+      year={2025},
+      eprint={2504.13861},
+      archivePrefix={arXiv},
+      primaryClass={cs.HC},
+      url={https://arxiv.org/abs/2504.13861}, 
+}
+```
