@@ -1,13 +1,17 @@
 # 3MDBench: Medical Multimodal Multi-agent Dialogue Benchmark
 
+[![arXiv](https://img.shields.io/badge/arXiv-2504.13861-b31b1b.svg)](https://arxiv.org/abs/2504.13861)
+
+**3MDBench**, or **M**edical **M**ultimodal **M**ulti-agent **D**ialogue **Bench**mark, is an open-source benchmark for evaluating large vision-language models (LVLMs) through simulated doctor-patient dialogues. It features a Doctor Agent interacting with a temperament-driven Patient Agent using images and structured complaints. After that, an Assessor Agent, aligned with human experts, evaluates diagnostic and communication quality.
+
 ![Preview](3mdbench.jpg)
 
 ## How to run estimation
 
-### Data & dependencies preparing
+### Dependencies preparing
 
 * Install dependencies from ```requirements.txt```
-* Download [images and complaints](https://drive.google.com/drive/folders/10j3bgase36w_IcEjGDgaErYFzVHiCjWZ?usp=sharing)
+* Check out [the 3MDBench dataset on Hugging Face](https://huggingface.co/datasets/univanxx/3mdbench)!
 
 ---
 ### Dialogues generation
@@ -18,8 +22,8 @@
 ---
 ### Dialogues assessment
 
-* Run ```run_assessment.sh``` to estimate generated dialogue which will be contained in the ```results/assessments``` folder;
-* Run ```run_diagnoses_obtaining.sh```to extract final diagnoses by Doctor Agent for each case;
+* Run ```run_assessment.sh``` to estimate generated dialogue, which will be contained in the ```results/assessments``` folder;
+* Run ```run_diagnoses_obtaining.sh```to extract final diagnoses by Doctor Agent for each case, which will be contained in the ```results/assessments/diags``` folder;
 * Explore ```benchmarking/count_metrics.ipynb``` to analyze model's metrics.
 
 #### BibTeX reference
