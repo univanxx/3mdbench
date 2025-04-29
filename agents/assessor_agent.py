@@ -5,8 +5,8 @@ sys.path.insert(0, "..")
 from utils.assessment_utils import prepare_image
 
 
-def get_assessment_llava(req, img_path, processor, model, device, sample=False):
-    image = prepare_image(img_path).convert("RGB")
+def get_assessment_llava(req, img, processor, model, device, sample=False):
+    image = prepare_image(img)
     conversation = [
         {
         "role": "user",

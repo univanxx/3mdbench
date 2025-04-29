@@ -3,8 +3,7 @@ from transformers import BitsAndBytesConfig
 import torch
 
 
-def prepare_image(img_path):
-    img = Image.open(img_path)
+def prepare_image(img):
     x = 400
     perc = x / img.size[0]
     img = img.resize((int(img.size[0] * perc), int(img.size[1] * perc)))

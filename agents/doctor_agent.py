@@ -1,6 +1,5 @@
 import os
 import httpx
-from PIL import Image
 from openai import OpenAI
 import base64
 
@@ -67,14 +66,9 @@ class DoctorAgentGPT():
         self.history = [{'role': 'system', 'content': self.initial_prompt}]
         self.use_finishing_prompt = False
     
-    def run(self, inp, img_path=None):
+    def run(self, inp, img=None):
         content = [{"type": "text", "text": inp}]
-        if img_path is not None:
-            img = Image.open(img_path)
-            if img.size[0] > 400 or ".png" in img_path:
-                x = 400
-                perc = x / img.size[0]
-                img = img.resize((int(img.size[0] * perc), int(img.size[1] * perc)))
+        if img:
             img = img.convert("RGB")
             img.save("tmp.jpg")
             base64_image = self.encode_image("tmp.jpg")

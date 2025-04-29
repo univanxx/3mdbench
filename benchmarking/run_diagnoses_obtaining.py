@@ -65,8 +65,8 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     from transformers import AutoProcessor, LlavaOnevisionForConditionalGeneration
-    processor = AutoProcessor.from_pretrained("/home/jovyan/isviridov/gm/models/llava-onevision-qwen2-72b-ov-chat-hf")
-    model = LlavaOnevisionForConditionalGeneration.from_pretrained("/home/jovyan/isviridov/gm/models/llava-onevision-qwen2-72b-ov-chat-hf", 
+    processor = AutoProcessor.from_pretrained("llava-hf/llava-onevision-qwen2-72b-ov-chat-hf")
+    model = LlavaOnevisionForConditionalGeneration.from_pretrained("llava-hf/llava-onevision-qwen2-72b-ov-chat-hf", 
                                                                 torch_dtype=torch.float16, 
                                                                 device_map="auto",
                                                                 load_in_4bit=True)
@@ -105,4 +105,3 @@ if __name__ == '__main__':
         # save
         with open(f"../results/assessment/diags/{args.experiment_name}/case_{k}.json", 'w') as f:
             json.dump(res, f)
-        # break
