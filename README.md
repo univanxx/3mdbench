@@ -38,3 +38,7 @@
       url={https://arxiv.org/abs/2504.13861}, 
 }
 ```
+
+---
+
+We appreciate your interest in our work! If you have any questions, please open an issue or contact Ivan at wchhiaarid@gmail.com or Amina at aremiftakhova@sber.ru.
