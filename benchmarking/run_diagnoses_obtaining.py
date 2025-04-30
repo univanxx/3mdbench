@@ -3,7 +3,7 @@ import json
 import torch
 import argparse
 from tqdm import tqdm
-import glob
+from datasets import load_dataset
 import re
 
 
@@ -72,11 +72,14 @@ if __name__ == '__main__':
                                                                 load_in_4bit=True)
 
     os.makedirs(f"../results/assessment/diags/{args.experiment_name}", exist_ok=False) 
-    cases = glob.glob(f"../results/{args.experiment_name}/*.json")
-    for case_i in tqdm(cases):
-        with open(case_i, 'r') as f:
+    data_path = f'../results/{args.experiment_name}'
+    data = load_dataset("univanxx/3mdbench", split="test")
+
+    for k, v in enumerate(tqdm(data)):
+
+        k = str(k)
+        with open(f"{data_path}/case_{k}.json", 'r') as f:
             data = json.load(f)
-        k = case_i.split('/')[-1].split('_')[-1].split('.')[0]
         data = data[k]
 
         try:
