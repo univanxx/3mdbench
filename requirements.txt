@@ -3,6 +3,9 @@ openai==1.65.2
 numpy==2.2.2
 scikit-learn==1.6.1
 Pillow==11.1.0
-torch==2.6.0
+torch==2.4.0
 tqdm==4.67.1
 transformers==4.48.3
+datasets==3.1.0
+accelerate==0.26.0
+bitsandbytes==0.45.5
