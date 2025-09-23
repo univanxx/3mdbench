@@ -6,6 +6,10 @@
 
 ![Preview](3mdbench.jpg)
 
+### Updates
+
+[2025-08-20] 3MDBench has been accepted to the **EMNLP 2025 Main Conference** 🎉
+
 ## How to run estimation
 
 ### Dependencies preparing
