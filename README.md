@@ -45,4 +45,4 @@
 
 ---
 
-We appreciate your interest in our work! If you have any questions, please open an issue or contact Ivan at wchhiaarid@gmail.com or Amina at aremiftakhova@sber.ru.
+We appreciate your interest in our work! If you have any questions, please open an issue or contact Ivan at wchhiaarid@gmail.com or Amina at noteisenheim@gmail.com.
